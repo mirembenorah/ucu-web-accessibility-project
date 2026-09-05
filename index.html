@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norah's Student Website</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #0a2a5e;
+      color: #ffffff;
+      padding: 1rem;
+    }
+    nav a {
+      color: #ffffff;
+      margin-right: 1rem;
+      text-decoration: underline;
+    }
+    nav a:focus, a:focus, button:focus, input:focus {
+      outline: 3px solid #f2b705;
+      outline-offset: 2px;
+    }
+    main {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      background-color: #0a2a5e;
+      color: #ffffff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Norah's Student Website</h1>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About This Site</h2>
+      <p>This is a simple starter website built as part of my Week 2 Competency Evidence assignment. It demonstrates good accessibility practices such as clear headings, readable text, and proper labels.</p>
+      <img src="student-workspace.jpg" alt="A laptop open on a desk showing lines of code, next to a notebook and a cup of coffee">
+    </section>
+
+    <section id="contact">
+      <h2>Contact Form</h2>
+      <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Norah's Student Website. Built for UCU coursework.</p>
+  </footer>
+
+</body>
+</html>
